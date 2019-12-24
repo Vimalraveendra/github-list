@@ -31,17 +31,26 @@ Answers
 
 8.Implemented desc sorting by every field , using keywords like sort & order= desc inside the fetch url .We got the sorted array list object items.
 
+9.Github component is required for the GitHub  authentication mechanism ,for that required an input field  for typing in the name of GitHub holder & a button . Once the user copies the name displayed in the row & paste it on the input field & hit the GitHub button.It checks the id in the list items and user id  matches or not .If  it matches  the row of repository of logged in user highlight.
+
 
 CheckList
 
 
-Render a list with rows containing "repository ID", "title", "owner", "stars" and "created at" timestamp
-Render an input element to search for repositories by name
-Cache the results of every search (or have a limit) - do not make an API request if the results are already stored
-Do not fire requests as long as the user is typing - use throttle or debounce
-Implement pagination (locally, not by using API queries)
-Add ability to control number of rows rendered per page (5 - default/10/15/20)
-Implement ASC/DESC sorting by every field
-Add GitHub authentication mechanism (eg: Log in with GitHub button) and highlight the row of repository of the logged-in user - please note that some users have 2FA enabled.
+1. Render a list with rows containing "repository ID", "title", "owner", "stars" and "created at" timestamp.
 
-9.Github component is required for the GitHub  authentication mechanism ,for that required an input field  for typing in the name of GitHub holder & a button . Once the user copies the name displayed in the row & paste it on the input field & hit the GitHub button.It checks the id in the list items and user id  matches or not .If  it matches  the row of repository of logged in user highlight.
+2. Render an input element to search for repositories by name.
+
+3.Cache the results of every search (or have a limit) - do not make an API request if the results are already stored.
+
+4.Do not fire requests as long as the user is typing - use throttle or debounce.
+
+5.Implement pagination (locally, not by using API queries).
+
+6.Add ability to control number of rows rendered per page (5 - default/10/15/20).
+
+7.Implement ASC/DESC sorting by every field.
+
+8. Add GitHub authentication mechanism (eg: Log in with GitHub button) and highlight the row of repository of the logged-in user - please note that some users have 2FA enabled.
+
+
