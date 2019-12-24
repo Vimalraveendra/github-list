@@ -34,18 +34,18 @@ React to run the project.
 
 # CheckList
 
-1. Render a list with rows containing "repository ID", "title", "owner", "stars" and "created at" timestamp.
+1. Render a list with rows containing "repository ID", "title", "owner", "stars" and "created at" timestamp.- [x]
 
-2. Render an input element to search for repositories by name.
+2. Render an input element to search for repositories by name.- [x]
 
-3.Cache the results of every search (or have a limit) - do not make an API request if the results are already stored.
+3.Cache the results of every search (or have a limit) - do not make an API request if the results are already stored.- [x]
 
-4.Do not fire requests as long as the user is typing - use throttle or debounce.
+4.Do not fire requests as long as the user is typing - use throttle or debounce.- [x]
 
-5.Implement pagination (locally, not by using API queries).
+5.Implement pagination (locally, not by using API queries).[x]
 
-6.Add ability to control number of rows rendered per page (5 - default/10/15/20).
+6.Add ability to control number of rows rendered per page (5 - default/10/15/20).[x]
 
-7.Implement ASC/DESC sorting by every field.
+7.Implement ASC/DESC sorting by every field.[x]
 
-8. Add GitHub authentication mechanism (eg: Log in with GitHub button) and highlight the row of repository of the logged-in user - please note that some users have 2FA enabled.
+8. Add GitHub authentication mechanism (eg: Log in with GitHub button) and highlight the row of repository of the logged-in user - please note that some users have 2FA enabled.[x]
