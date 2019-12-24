@@ -1,0 +1,8 @@
+const repositoriesActionTypes = {
+  FETCH_USER_PENDING: "FETCH_USER_PENDING",
+  FETCH_USER_SUCCESS: "FETCH_USER_SUCCESS",
+  FETCH_USER_FAILED: "FETCH_USER_FAILED",
+  SET_USER_REPOSITORY: " SET_USER_REPOSITORY"
+};
+
+export default repositoriesActionTypes;
