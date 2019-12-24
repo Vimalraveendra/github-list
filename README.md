@@ -1,4 +1,5 @@
 # Github-List.
+
 React to run the project.
 
 1.Clone this repo.
@@ -9,21 +10,19 @@ React to run the project.
 
 4.Run yarn start.
 
+# Answers
 
+.The thoughts and considerations I had while implementing the task.
 
-Answers
+1. First I thought to create the task using react, later on I can move to redux, so that I created a boilerplate using the create-react-app task-list.
 
-.The thoughts and considerations I  had while implementing the task.
+2. For rendering all these list items I required one page component, one state component for holding the states of items & five presentational components for rendering.
 
-1. First I thought to create the task using react, later on I can move to redux, so that I created a boilerplate using the    create-react-app task-list.
+3.For rendering an input element to search for repositories by name, a searchField component is required.Based on what ever the user typed in the inputSearchField sends a request to the GitHub repository server and fetches the appropriate repositories & render it.
 
-2. For rendering all these list items I required one page component, one state component for holding the states of items  & five presentational components  for  rendering.
+4. In order to Caching the results of every search need to use a redux-cache library, So it will help us to not make an API request if the result are already stored.
 
-3.For rendering an input element to search for repositories by name,  a searchField component is required.Based on what ever the user typed in the inputSearchField sends a request to the GitHub repository server and fetches the appropriate repositories & render it.
-
-4. In order to Caching the results of every search need to use a redux-cache library, So it will help us to  not make an API request if the result are already stored.
-
-5. Rendering a list with row items ,a state repository component is required for holding the state of the component, a functional repository list component for iterating through the  list items that we got from the repository component after the fetch api call to the GitHub repository. In order to render row items Repository items component is required.
+5. Rendering a list with row items ,a state repository component is required for holding the state of the component, a functional repository list component for iterating through the list items that we got from the repository component after the fetch api call to the GitHub repository. In order to render row items Repository items component is required.
 
 6.Required a throttle or debounce library inside the repository component, so that do not fire the request as soon user types.Using debounce basically triggers when you take your hands off the keyboard. It guarantees that a function is only executed a single time.So it helps us from keep firing the function once user types in.
 
@@ -31,11 +30,9 @@ Answers
 
 8.Implemented desc sorting by every field , using keywords like sort & order= desc inside the fetch url .We got the sorted array list object items.
 
-9.Github component is required for the GitHub  authentication mechanism ,for that required an input field  for typing in the name of GitHub holder & a button . Once the user copies the name displayed in the row & paste it on the input field & hit the GitHub button.It checks the id in the list items and user id  matches or not .If  it matches  the row of repository of logged in user highlight.
+9.Github component is required for the GitHub authentication mechanism ,for that required an input field for typing in the name of GitHub holder & a button . Once the user copies the name displayed in the row & paste it on the input field & hit the GitHub button.It checks the id in the list items and user id matches or not .If it matches the row of repository of logged in user highlight.
 
-
-CheckList
-
+# CheckList
 
 1. Render a list with rows containing "repository ID", "title", "owner", "stars" and "created at" timestamp.
 
@@ -52,5 +49,3 @@ CheckList
 7.Implement ASC/DESC sorting by every field.
 
 8. Add GitHub authentication mechanism (eg: Log in with GitHub button) and highlight the row of repository of the logged-in user - please note that some users have 2FA enabled.
-
-
